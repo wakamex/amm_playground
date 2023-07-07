@@ -2,6 +2,12 @@
 name = "AMM Playground"
 authors = [{ name = "Mihai Cosma", email = "mcosma@gmail.com" }]
 
+[tool.poetry]
+name = 'AMM Playground'
+version = '0.0.1'
+description = 'lets you play with generic AMM transactions'
+authors = ['Mihai Cosma']
+
 [tool.pylint.format]
 max-line-length = "200"
 
