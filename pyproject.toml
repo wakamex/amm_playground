@@ -7,7 +7,9 @@ name = 'AMM Playground'
 version = '0.0.1'
 description = 'lets you play with generic AMM transactions'
 authors = ['Mihai Cosma']
-dependencies = ['pyee']
+
+[tool.poetry.dependencies]
+pyee = "^11.0.0"
 
 [tool.pylint.format]
 max-line-length = "200"
