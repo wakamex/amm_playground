@@ -1,0 +1,22 @@
+[MESSAGES CONTROL]
+disable = missing-class-docstring, too-few-public-methods, unnecessary-semicolon, missing-function-docstring, missing-module-docstring, redefined-outer-name, invalid-name, too-many-instance-attributes, too-many-arguments, too-many-locals
+
+[FORMAT]
+method-naming-style=snake_case
+module-naming-style=snake_case
+variable-naming-style=snake_case
+function-naming-style=snake_case
+const-naming-style=UPPER_CASE
+class-const-naming-style=snake_case
+class-attribute-naming-style=snake_case
+class-naming-style=PascalCase
+
+; pylint by default allows URLs to pass the line limit, but only if they're the only thing in the comment.
+; we want a more permissive regex which captures lines in our docstrings where the URL is at the end of the line.
+; see discussion: https://github.com/pylint-dev/pylint/issues/2178
+ignore-long-lines=^.*(# )?<?https?://\S+>?$
+
+good-names=i,j,k,ex,Run,_,pk,x,y,me,p
+
+[MASTER]
+max-line-length = 200
